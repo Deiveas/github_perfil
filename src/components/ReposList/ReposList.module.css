@@ -33,35 +33,38 @@
 
 }
 
-/* Media query para dispositivos móveis */
+/* Adicione a media query diretamente aqui */
 @media only screen and (max-width: 767px) {
     .list {
-        grid-template-columns: 1fr; /* Altera a grade para uma única coluna em dispositivos móveis */
+      grid-template-columns: 1fr; /* Altera a grade para uma única coluna em dispositivos móveis */
     }
-
+  
     .listItem {
-        /* Ajuste os estilos do item da lista para dispositivos móveis */
-        padding: 12px; /* Reduz o preenchimento do item da lista */
-        border: none; /* Remove a borda do item da lista em dispositivos móveis */
+      /* Ajuste os estilos do item da lista para dispositivos móveis */
+      padding: 12px; /* Reduz o preenchimento do item da lista */
+      border: none; /* Remove a borda do item da lista em dispositivos móveis */
     }
-
-    .itemName b, .itemLanguage b {
-        /* Ajuste os estilos do nome e linguagem do item para dispositivos móveis */
-        margin-right: 0; /* Remove a margem à direita dos elementos <b> dentro dos itens da lista */
+  
+    /* Altera a cor do texto dos dados extraídos pela API para amarelo em dispositivos móveis */
+    .listItem p, 
+    .listItem span,
+    .listItem .itemLanguage,
+    .listItem .itemName {
+      color: yellow;
     }
-
+  
     .itemLink {
-        /* Ajuste os estilos do link do item para dispositivos móveis */
-        margin-top: 12px; /* Aumenta o espaçamento superior do link do item */
-        padding: 10px; /* Reduz o preenchimento do link do item */
+      /* Ajuste os estilos do link do item para dispositivos móveis */
+      margin-top: 12px; /* Aumenta o espaçamento superior do link do item */
+      padding: 10px; /* Reduz o preenchimento do link do item */
     }
-
+  
     .rodape {
-        /* Ajuste os estilos do rodapé para dispositivos móveis */
-        padding-top: 20px; /* Reduz o espaçamento superior do rodapé */
-        font-size: 18px; /* Reduz o tamanho da fonte do rodapé */
+      /* Ajuste os estilos do rodapé para dispositivos móveis */
+      padding-top: 20px; /* Reduz o espaçamento superior do rodapé */
+      font-size: 18px; /* Reduz o tamanho da fonte do rodapé */
     }
-
+  
     /* Adicione quaisquer outras regras de estilo específicas para dispositivos móveis aqui */
-}
-
+  }
+  
