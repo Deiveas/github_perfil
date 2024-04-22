@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
     width: 100%;
+    text-align: center;
     background-color: var(--corPrincipal);
 }
 
@@ -17,4 +18,27 @@
 :root {
     --corPrincipal:#0b0b61;
     --corSecundaria:#FFFFFF;
+    --corTerciaria:#FFFF00;
 }
+
+input {
+    width: 50%;
+    border: 5px solid var(--corSecundaria);
+    margin: 5px;
+    margin-top: 10px;
+    font-size: 18px;
+    color: var(--corTerciaria);
+}
+
+button {
+    width: 50%;
+    border: 5px solid var(--corSecundaria);
+    margin: 5px;
+    margin-top: 10px;
+    font-size: 18px;
+    color: var(--corTerciaria);
+}
+
+
+
+

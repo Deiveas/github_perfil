@@ -35,36 +35,71 @@
 
 /* Adicione a media query diretamente aqui */
 @media only screen and (max-width: 767px) {
-    .list {
-      grid-template-columns: 1fr; /* Altera a grade para uma única coluna em dispositivos móveis */
-    }
-  
-    .listItem {
-      /* Ajuste os estilos do item da lista para dispositivos móveis */
-      padding: 12px; /* Reduz o preenchimento do item da lista */
-      border: none; /* Remove a borda do item da lista em dispositivos móveis */
-    }
-  
-    /* Altera a cor do texto dos dados extraídos pela API para amarelo em dispositivos móveis */
-    .listItem p, 
-    .listItem span,
-    .listItem .itemLanguage,
-    .listItem .itemName {
-      color: yellow;
-    }
-  
-    .itemLink {
-      /* Ajuste os estilos do link do item para dispositivos móveis */
-      margin-top: 12px; /* Aumenta o espaçamento superior do link do item */
-      padding: 10px; /* Reduz o preenchimento do link do item */
-    }
-  
-    .rodape {
-      /* Ajuste os estilos do rodapé para dispositivos móveis */
-      padding-top: 20px; /* Reduz o espaçamento superior do rodapé */
-      font-size: 18px; /* Reduz o tamanho da fonte do rodapé */
-    }
-  
-    /* Adicione quaisquer outras regras de estilo específicas para dispositivos móveis aqui */
+  header, h1{
+    color: var(--corTerciaria);
+}
+  .list {
+    grid-template-columns: 1fr; /* Altera a grade para uma única coluna em dispositivos móveis */
   }
-  
+
+  .listItem {
+    /* Ajuste os estilos do item da lista para dispositivos móveis */
+    padding: 12px; /* Reduz o preenchimento do item da lista */
+    border: none; /* Remove a borda do item da lista em dispositivos móveis */
+  }
+
+  /* Altera a cor do texto dos dados extraídos pela API para amarelo em dispositivos móveis */
+  .listItem p, 
+  .listItem span,
+  .listItem .itemLanguage,
+  .listItem .itemName,
+  .userName {
+    color: var(--corTerciaria);
+  }
+
+  /* Estilo para a mensagem "Carregando" */
+  h1 {
+    color: var(--corTerciaria);
+  }
+
+  .itemLink {
+    /* Ajuste os estilos do link do item para dispositivos móveis */
+    margin-top: 12px; /* Aumenta o espaçamento superior do link do item */
+    padding: 10px; /* Reduz o preenchimento do link do item */
+  }
+
+  /* Estilo para o rodapé */
+  .rodape {
+    /* Ajuste os estilos do rodapé para dispositivos móveis */
+    padding-top: 20px; /* Reduz o espaçamento superior do rodapé */
+    font-size: 18px; /* Reduz o tamanho da fonte do rodapé */
+    color: var(--corTerciaria); /* Altera a cor do texto para amarelo */
+  }
+
+  input, button {
+    display: block;
+  }
+
+  /* Adicione quaisquer outras regras de estilo específicas para dispositivos móveis aqui */
+}
+
+@keyframes blinking {
+  0%, 100% {
+    opacity: 1;
+    visibility: visible; /* Garante que o texto seja visível */
+  }
+  50% {
+    opacity: 0;
+    visibility: hidden; /* Oculta o texto */
+  }
+}
+
+
+
+
+.errorMessage {
+  color: red; /* Cor do texto vermelho */
+  animation: blinking 1s infinite; /* Aplica a animação de piscar */
+}
+
+
